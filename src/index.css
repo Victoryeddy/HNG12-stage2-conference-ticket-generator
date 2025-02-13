@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+*{
+    font-family: "JejuMyeongjo", sans-serif;
+    /* outline: 1px solid red; */
+}
+
+.font-road-rage{
+    font-family: 'Road Rage', sans-serif;
+}
+
+.font-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-alatsi{
+    font-family: "Alatsi", serif;
+}
+
+.bg-background {
+    background: radial-gradient(52.52% 32.71% at 50% 97.66%, rgba(36, 160, 181, 0.20) 0%, rgba(36, 160, 181, 0.00) 100%), #02191D;
+}
+
