@@ -5,12 +5,8 @@ export const handleTicketDownload = async (elementRef) => {
 
     try {
         const dataUrl = await domtoimage.toPng(elementRef, {
-            quality: 1, // High quality
-            bgcolor: 'black', // Set a background color if needed
-            filter: (node) => {
-                // Optionally exclude elements if necessary
-                return node.tagName !== 'BUTTON';
-            }
+            quality: 1,
+            bgcolor: 'black'
         });
 
         const link = document.createElement('a');
