@@ -407,6 +407,7 @@ export const TicketGeneratorForm = () => {
                       className="hidden"
                       onChange={handleFileChange}
                       accept="image/png, image/jpeg"
+                      required
                     />
                   </div>
                 </div>
@@ -436,6 +437,7 @@ export const TicketGeneratorForm = () => {
                     onBlur={(e) => handleBlur("fullName", e.target.value)}
                     aria-describedby="fullName"
                     placeholder="Victory . E"
+                    required
                     className="w-full p-2 rounded-lg border border-[#07373F] font-roboto text-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0A505C]"
                   />
                   {errors?.fullName && (
@@ -455,6 +457,7 @@ export const TicketGeneratorForm = () => {
                       onBlur={(e) => handleBlur("email", e.target.value)}
                       aria-describedby="email"
                       placeholder="hello@avioflagos.io"
+                      required
                       className="w-full p-2 rounded-lg border border-[#07373F] font-roboto text-gray-300 focus:outline-none pl-9 focus:ring-2 focus:ring-[#0A505C]"
                     />
                     <Mail className="text-white size-6 absolute bottom-2 left-2" />
@@ -474,6 +477,7 @@ export const TicketGeneratorForm = () => {
                     onInput={(e) => handleBlur("aboutProject", e.target.value)}
                     onBlur={(e) => handleBlur("aboutProject", e.target.value)}
                     placeholder="Textarea"
+                    required
                     className="w-full h-32 p-3 rounded-lg border border-[#07373F] font-roboto text-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0A505C] bg-transparent"
                   ></textarea>
                   {errors?.aboutProject && (
