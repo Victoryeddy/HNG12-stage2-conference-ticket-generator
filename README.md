@@ -37,9 +37,7 @@ cd HNG12-stage2-conference-ticket-generator
 2. Install dependencies:
 ```bash
 npm install
-# or
-yarn install
-```
+
 
 3. Create a `.env` file in the root directory and add your Cloudinary credentials:
 ```env
